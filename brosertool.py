@@ -36,7 +36,7 @@ def mailTo(in_addr, in_content):
     linkElemUser.send_keys('henss')
     #获取密码
     linkElemPwd = browser.find_element_by_id('txtPass')
-    linkElemPwd.send_keys('***')
+    linkElemPwd.send_keys('***  ')
     #获取登录按钮
     linkElemSubmit = browser.find_element_by_id('loginBtn')
     linkElemSubmit.click()
