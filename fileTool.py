@@ -7,7 +7,9 @@ import os, shutil, logging,random
 # copy some kind of file to a certain folder
 def copyCertainFile(file_ext, source, destination):
 #    os.chdir(source)
+
     for foldername, subfolders, subfiles in os.walk(source):
+        #该层循环已经遍历所有文件
         for subfile in subfiles:
             if (os.path.splitext(subfile)[1] == file_ext):
                 shutil.copy(os.path.join(foldername, subfile), destination)
